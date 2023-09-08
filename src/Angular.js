@@ -1487,6 +1487,7 @@ function encodeUriQuery(val, pctEncodeSpaces) {
              replace(/%24/g, '$').
              replace(/%2C/gi, ',').
              replace(/%3B/gi, ';').
+             replace(/%2F/gi, '/').
              replace(/%20/g, (pctEncodeSpaces ? '%20' : '+'));
 }
 
